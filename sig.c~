@@ -1,0 +1,7 @@
+#include <stdio.h>
+#include <signal.h>
+
+
+int main(){
+  printf("The pid is: %d", getpid());
+}
