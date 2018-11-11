@@ -7,7 +7,7 @@
 static void sighandler(int signo){
   if (signo == SIGINT){
   	int file = open("write.txt", O_WRONLY | O_CREAT , 0666);
-  	write(file, "Keyboard interrupt, exiting\n",28);
+  	write(file, "Exited due to keyboard interrupt\n",33);
     printf("keyboard interrupt\n");
     close(file);
     exit(0);
