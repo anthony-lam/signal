@@ -6,3 +6,6 @@ sig.o: sig.c
 
 run:
 	./a.out
+
+clean:
+	rm write.txt
